@@ -4,8 +4,12 @@
 </head>
 <body>
 	<div id="container">
-		<form action="/friends/<id>" method="POST">
-			<input type="submit" value="Update" name="update">
+		<h2>Edit friend:</h2>
+		<form action="/friends/{{friend['id']}}" method="POST">
+			<input type="text" placeholder="First Name"  name="first_name">
+			<input type="text" placeholder="Last Name"  name="last_name">
+			<input type="text" placeholder="Occupation"  name="occupation">
+			<input type="submit" value="Update" id="update" name="update">
 		</form>
 	</div>
 </body>
